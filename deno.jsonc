@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "test": "deno test --allow-net=0.0.0.0:5000,localhost:5000",
+    "build": "deno run -A build.ts"
+  },
+  "imports": {
+    "@self/": "./src/",
+    "!std/": "https://deno.land/std@0.196.0/",
+    "!oak/": "https://deno.land/x/oak@v12.6.0/"
+  }
+}

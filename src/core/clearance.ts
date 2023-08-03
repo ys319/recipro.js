@@ -1,0 +1,10 @@
+
+
+
+const isRequest = () => {
+    
+}
+
+const isResponse = () => {
+    
+}

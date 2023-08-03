@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "deploy": "deno task deploy:client && deno task deploy:bundle && deno task deploy:deploy",
+    "deploy:client": "cd ../client && pnpm build",
+    "deploy:bundle": "deno bundle main.ts --import-map deno.jsonc main.js",
+    "deploy:deploy": "deployctl deploy --token=$DENO_DEPLOY_TOKEN --project=switches main.js"
+  },
+  "imports": {
+    "@self/": "../../../src/",
+    "!std/": "https://deno.land/std@0.196.0/",
+    "!oak/": "https://deno.land/x/oak@v12.6.0/"
+  }
+}
