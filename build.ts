@@ -7,7 +7,7 @@ const entryPoints = [
     path.join(__dirname, "src", "mod.ts")
 ]
 
-const outDir = path.join(__dirname, "dist", "recipro.js")
+const outDir = path.join(__dirname, "dist")
 
 await build({
     compilerOptions: { lib: ["DOM", "ESNext"], importHelpers: false },
