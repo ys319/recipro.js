@@ -1,4 +1,4 @@
-import { Protocol } from "@self/mod.ts"
+import { Protocol } from "@ys319/recipro.js"
 
 export type GetColorProtocol = Protocol<
     "color",

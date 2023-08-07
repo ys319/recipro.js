@@ -6,6 +6,7 @@
   "imports": {
     "@self/": "./src/",
     "!std/": "https://deno.land/std@0.196.0/",
-    "!oak/": "https://deno.land/x/oak@v12.6.0/"
+    "!oak/": "https://deno.land/x/oak@v12.6.0/",
+    "@ys319/recipro.js": "./src/mod.ts"
   }
 }
