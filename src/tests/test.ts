@@ -1,8 +1,8 @@
 import { assert } from "!std/assert/mod.ts"
 import { makePromise } from "@self/core/promise.ts"
-import { Specification } from "@self/mod.ts"
 import { BroadcastProtocol, RoundTripProtocol, SimpleProtocol, SlowProtocol } from "@self/tests/protocol.ts"
 import { server } from "@self/tests/server.ts"
+import { Specification } from "@ys319/recipro.js"
 
 const PORT = 5000
 await server(PORT)

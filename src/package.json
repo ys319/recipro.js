@@ -1,12 +1,9 @@
 {
     "name": "@ys319/recipro.js",
-    "description": "",
+    "description": "Reciprocal RPC over WebSocket",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "github:ys319/recipro.js"
-    },
-    "publishConfig": {
-        "@ys319:registry": "https://npm.pkg.github.com"
     }
 }

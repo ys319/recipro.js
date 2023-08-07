@@ -1,31 +1,24 @@
 import package_json from "@self/package.json" assert { type: "json" }
-import * as path from "https://deno.land/std@0.115.1/path/mod.ts"
-import { build } from "https://deno.land/x/dnt@0.37.0/mod.ts"
+import { build, path } from "./deps.ts"
 
 const __dirname = new URL(".", import.meta.url).pathname
 
-const inDir = path.join(__dirname, "src")
+const entryPoints = [
+    path.join(__dirname, "src", "mod.ts")
+]
+
 const outDir = path.join(__dirname, "dist", "recipro.js")
 
 await build({
-    package: {
-        ...package_json,
-        version: "0.0.1",
-    },
-    entryPoints: [
-        path.join(inDir, "mod.ts")
-    ],
-    outDir,
-    test: false,
-    shims: {},
-    compilerOptions: {
-        lib: [
-            "DOM",
-            "ES2020"
-        ],
-        importHelpers: false,
-    },
-    packageManager: "npm",
-    skipSourceOutput: true,
+    compilerOptions: { lib: ["DOM", "ESNext"], importHelpers: false },
+    entryPoints,
     importMap: "deno.jsonc",
+    outDir,
+    package: { ...package_json, version: "0.0.1", },
+    packageManager: "npm",
+    shims: {},
+    skipSourceOutput: true,
+    test: false,
+    typeCheck: "single",
+    scriptModule: false,
 })
