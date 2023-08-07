@@ -1,6 +1,6 @@
 import { Application, Router } from "!oak/mod.ts"
-import { Realize, Specification } from "@self/mod.ts"
-import { GetSwitchesProtocol, SetCountProtocol, SetSwitchProtocol, ToggleSwitchProtocol } from "./proto/switches.ts"
+import { Realize, Specification } from "@ys319/recipro.js"
+import { GetSwitchesProtocol, SetCountProtocol, SetSwitchProtocol, ToggleSwitchProtocol } from "../client/src/proto/switches.ts"
 
 const main = () => {
     const lights = [true, false, true, false, false]
