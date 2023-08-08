@@ -10,15 +10,16 @@ const entryPoints = [
 const outDir = path.join(__dirname, "dist")
 
 await build({
+    package: { ...package_json },
     compilerOptions: { lib: ["DOM", "ESNext"], importHelpers: false },
     entryPoints,
-    importMap: "deno.jsonc",
     outDir,
-    package: { ...package_json, version: "0.0.1", },
+    importMap: "deno.jsonc",
     packageManager: "npm",
-    shims: {},
     skipSourceOutput: true,
+    shims: {},
+    typeCheck: "both",
     test: false,
-    typeCheck: "single",
+    declaration: "separate",
     scriptModule: false,
 })
