@@ -5,11 +5,11 @@
 		},
 		{
 			"name": "Switches(Client)",
-			"path": "sample/switches/client"
+			"path": "example/switches/client"
 		},
 		{
 			"name": "Whiteboard(Client)",
-			"path": "sample/whiteboard/client"
+			"path": "example/whiteboard/client"
 		}
 	],
 	"settings": {}
