@@ -1,8 +1,17 @@
 {
-    "private": false,
     "name": "@ys319/recipro.js",
+    "version": "0.0.1",
     "description": "Reciprocal RPC over WebSocket",
+    "keywords": [],
+    "homepage": "https://github.com/ys319/recipro.js",
+    "bugs": {
+        "url": "https://github.com/ys319/recipro.js/issues"
+    },
     "license": "MIT",
+    "author": "Yoshimasa Kuroyama",
+    "contributors": [],
+    "private": false,
+    "types": "./types/mod.d.ts",
     "repository": {
         "type": "git",
         "url": "github:ys319/recipro.js"
