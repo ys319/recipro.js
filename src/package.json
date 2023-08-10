@@ -1,6 +1,6 @@
 {
     "name": "@ys319/recipro.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Reciprocal RPC over WebSocket",
     "keywords": [],
     "homepage": "https://github.com/ys319/recipro.js",
